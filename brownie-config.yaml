@@ -1,0 +1,15 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.9.0
+
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.9.0"
+
+# if below doesnot work then use the direct link in READMEissues section
+networks:
+  default: development
+  polygon_amoy:
+    host: https://polygon-amoy.g.alchemy.com/v2/<ALCHEMY_KEY_HERE>
+    chainid: 80002
+    explorer: https://api-amoy.polygonscan.com/api
